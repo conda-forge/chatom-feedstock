@@ -1,5 +1,5 @@
 context:
-  version: "0.1.1"
+  version: "0.1.2"
   python_min: "3.11"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/chatom/chatom-${{ version }}.tar.gz
-  sha256: 3effbee298097d54038211cac5e24e82fb0d88c2650f7a34c685f7df0a95e8aa
+  sha256: 294a1904503d1722759ef3746c45428aa8bbbec3f550b57dab03dd24966103e2
 
 build:
   script: python -m pip install . -vv
@@ -28,9 +28,9 @@ requirements:
 tests:
   - python:
       imports:
-      - chatom
-      - chatom.base
-      - chatom.format
+        - chatom
+        - chatom.base
+        - chatom.format
       pip_check: true
       python_version: ${{ python_min }}.*
 
