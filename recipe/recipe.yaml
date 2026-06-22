@@ -1,5 +1,5 @@
 context:
-  version: "0.1.2"
+  version: "0.1.3"
   python_min: "3.11"
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/chatom/chatom-${{ version }}.tar.gz
-  sha256: 294a1904503d1722759ef3746c45428aa8bbbec3f550b57dab03dd24966103e2
+  sha256: 254578eeb6b3279749d4001d1b6a4507358c22bce98e460757bab4d1dd940b3e
 
 build:
   script: python -m pip install . -vv
